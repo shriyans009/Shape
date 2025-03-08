@@ -7,7 +7,7 @@ class Cylinder extends Shape implements Volume {
         this.radius = radius;
         this.height = height;
     }
-    
+
     @Override
     double calculateArea() {
         return 2 * Math.PI * radius * (radius + height);
@@ -18,4 +18,8 @@ class Cylinder extends Shape implements Volume {
         return Math.PI * radius * radius * height;
     }
 
+    @Override
+    double calculatePerimeter() {
+        return 2 * Math.PI * radius; // Perimeter of base circle
+    }
 }
