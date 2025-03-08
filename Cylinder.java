@@ -13,4 +13,9 @@ class Cylinder extends Shape implements Volume {
         return 2 * Math.PI * radius * (radius + height);
     }
 
+    @Override
+    public double calculateVolume() {
+        return Math.PI * radius * radius * height;
+    }
+
 }
