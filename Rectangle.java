@@ -7,8 +7,14 @@ class Rectangle extends Shape {
         this.length = length;
         this.width = width;
     }
+
     @Override
     double calculateArea() {
         return length * width;
+    }
+
+    @Override
+    double calculatePerimeter() {
+        return 2 * (length + width);
     }
 }
